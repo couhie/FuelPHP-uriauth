@@ -150,8 +150,8 @@ class Auth_Login_UniAuth extends \Auth_Login_Driver
 		}
 
 		$this->create_hash(null, $options);
-		\Session::set('auth', $this->user);
 		\Session::instance()->rotate();
+		\Session::set('auth', $this->user);
 		return true;
 	}
 

@@ -17,10 +17,11 @@ class Uriauth
         $output = <<<HELP
 
 Description:
-  Generate hash password from string.
+  Convert hash password.
 
 Commands:
-  php oil refine uriauth:password <string>
+  php oil refine uriauth:password_encrypt <string>
+  php oil refine uriauth:password_decrypt <string>
 
 HELP;
         \Cli::write($output);
